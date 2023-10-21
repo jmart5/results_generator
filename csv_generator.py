@@ -68,5 +68,5 @@ df['Grade']=results_info
 df['Comments']=comments_info
 
 # Create CSV
-csv_file_path = "resutls_summary.csv"
+csv_file_path = "results_summary.csv"
 df.to_csv(csv_file_path, index=False)
