@@ -54,7 +54,7 @@ def parse_feedback(strings_list):
     return extracted_list
 
 # Request the directory path
-directory_path = input("Please enter the results folder path: ")
+directory_path = "/grading_dir/results"
 
 # Parse required fields from files
 file_info = parse_names(directory_path)
@@ -68,5 +68,5 @@ df['Grade']=results_info
 df['Comments']=comments_info
 
 # Create CSV
-csv_file_path = "results_summary.csv"
+csv_file_path = "/grading_dir/results/results_summary.csv"
 df.to_csv(csv_file_path, index=False)
