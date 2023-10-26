@@ -63,7 +63,7 @@ results_info = parse_results(file_contents)
 comments_info = parse_feedback(file_contents)
 
 # Store results in a dataframe 
-df = pd.DataFrame(file_info, columns=["Part1", "Part2"])
+df = pd.DataFrame(file_info, columns=["Last Name", "First Name"])
 df['Grade']=results_info
 df['Comments']=comments_info
 
